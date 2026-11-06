@@ -1,0 +1,16 @@
+.DS_Store
+.vercel
+.env*
+
+# рабочие материалы и заметки по клиенту: только локально
+.art-director/
+
+# фото, которых нет на сайте
+site/img/terrasa-4.webp
+site/img/d-shar.webp
+site/img/d-shar2.webp
+site/img/d-stena.webp
+site/img/d-uzel.webp
+site/img/d-torec.webp
+site/img/st-roof.webp
+site/img/og.webp
