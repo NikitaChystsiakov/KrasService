@@ -18,22 +18,52 @@
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-arrows-left-right" viewBox="0 0 256 256"><path d="M213.66,181.66l-32,32a8,8,0,0,1-11.32-11.32L188.69,184H48a8,8,0,0,1,0-16H188.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,213.66,181.66Zm-139.32-64a8,8,0,0,0,11.32-11.32L67.31,88H208a8,8,0,0,0,0-16H67.31L85.66,53.66A8,8,0,0,0,74.34,42.34l-32,32a8,8,0,0,0,0,11.32Z"/></symbol><symbol id="i-arrow-right" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol><symbol id="i-paperclip" viewBox="0 0 256 256"><path d="M209.66,122.34a8,8,0,0,1,0,11.32l-82.05,82a56,56,0,0,1-79.2-79.21L147.67,35.73a40,40,0,1,1,56.61,56.55L105,193A24,24,0,1,1,71,159L154.3,74.38A8,8,0,1,1,165.7,85.6L82.39,170.31a8,8,0,1,0,11.27,11.36L192.93,81A24,24,0,1,0,159,47L59.76,147.68a40,40,0,1,0,56.53,56.62l82.06-82A8,8,0,0,1,209.66,122.34Z"/></symbol><symbol id="i-x" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol><symbol id="i-check" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></symbol><symbol id="i-caret-left" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"/></symbol><symbol id="i-caret-right" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></symbol><symbol id="i-plus" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></symbol><symbol id="i-file-text" viewBox="0 0 256 256"><path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Zm-32-80a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,136Zm0,32a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,168Z"/></symbol></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-arrows-left-right" viewBox="0 0 256 256"><path d="M213.66,181.66l-32,32a8,8,0,0,1-11.32-11.32L188.69,184H48a8,8,0,0,1,0-16H188.69l-18.35-18.34a8,8,0,0,1,11.32-11.32l32,32A8,8,0,0,1,213.66,181.66Zm-139.32-64a8,8,0,0,0,11.32-11.32L67.31,88H208a8,8,0,0,0,0-16H67.31L85.66,53.66A8,8,0,0,0,74.34,42.34l-32,32a8,8,0,0,0,0,11.32Z"/></symbol><symbol id="i-arrow-right" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol><symbol id="i-paperclip" viewBox="0 0 256 256"><path d="M209.66,122.34a8,8,0,0,1,0,11.32l-82.05,82a56,56,0,0,1-79.2-79.21L147.67,35.73a40,40,0,1,1,56.61,56.55L105,193A24,24,0,1,1,71,159L154.3,74.38A8,8,0,1,1,165.7,85.6L82.39,170.31a8,8,0,1,0,11.27,11.36L192.93,81A24,24,0,1,0,159,47L59.76,147.68a40,40,0,1,0,56.53,56.62l82.06-82A8,8,0,0,1,209.66,122.34Z"/></symbol><symbol id="i-x" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol><symbol id="i-check" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></symbol><symbol id="i-caret-left" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"/></symbol><symbol id="i-caret-right" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></symbol><symbol id="i-caret-down" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></symbol><symbol id="i-plus" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></symbol><symbol id="i-file-text" viewBox="0 0 256 256"><path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Zm-32-80a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,136Zm0,32a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,168Z"/></symbol></svg>
 
 <header class="top" id="top">
   <div class="top-in">
-  <a class="brand" href="#top" aria-label="КрасСервис, на начало страницы">КрасСервис</a>
-  <nav class="top-nav" aria-label="Разделы">
-    <a href="#objects">Объекты</a>
-    <a href="#process">Как идёт работа</a>
-    <a href="#more">Что ещё делаем</a>
-    <a href="#faq">Вопросы</a>
+  <a class="brand" href="#top" aria-label="КрасСервис, на главную">КрасСервис</a>
+  <nav class="top-nav" aria-label="Основное меню">
+    <button class="nv-b" type="button" aria-expanded="false" aria-controls="pProj">Проекты <svg class="i"><use href="#i-caret-down"/></svg></button>
+    <button class="nv-b" type="button" aria-expanded="false" aria-controls="pWhat">Что делаем <svg class="i"><use href="#i-caret-down"/></svg></button>
+    <a href="#process">Как работаем</a>
+    <a href="about.html" data-soon>О компании</a>
+    <a href="contacts.html" data-soon>Контакты</a>
   </nav>
   <a class="top-tel" href="tel:+375333294415">+375 33 329-44-15</a>
   <a class="top-link" href="viber://chat?number=%2B375333294415">Viber</a>
   <a class="btn btn-main btn-s" href="#request">Приложить проект</a>
+  <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mnav"><span></span><span></span></button>
+  </div>
+  <div class="pan" id="pProj" hidden>
+    <div class="pan-in" id="pProjIn"></div>
+  </div>
+  <div class="pan" id="pWhat" hidden>
+    <div class="pan-in">
+      <a class="tile" href="#objects"><img loading="lazy" src="img/dom200-2.webp" alt="" width="1080" height="1080"><b>Дома из бруса</b></a>
+      <a class="tile" href="bani.html" data-soon><img loading="lazy" src="img/more-banya.webp" alt="" width="1080" height="1080"><b>Бани</b></a>
+      <a class="tile" href="besedki.html" data-soon><img loading="lazy" src="img/more-besedka.webp" alt="" width="1100" height="1100"><b>Беседки</b></a>
+      <a class="tile" href="kacheli.html" data-soon><img loading="lazy" src="img/more-kacheli.webp" alt="" width="1080" height="1080"><b>Качели</b></a>
+      <a class="tile" href="masterskaya.html" data-soon><img loading="lazy" src="img/d-shar3.webp" alt="" width="610" height="570"><b>Авторская мастерская</b></a>
+      <a class="tile" href="pilomaterialy.html" data-soon><img loading="lazy" src="img/d-shtabel.webp" alt="" width="1080" height="1080"><b>Пиломатериалы</b></a>
+    </div>
   </div>
 </header>
+
+<div class="mnav" id="mnav" aria-hidden="true">
+  <nav class="mnav-list" aria-label="Меню">
+    <a href="#objects">Проекты</a>
+    <a href="#more">Что делаем</a>
+    <a href="#process">Как работаем</a>
+    <a href="about.html" data-soon>О компании</a>
+    <a href="contacts.html" data-soon>Контакты</a>
+  </nav>
+  <div class="mnav-foot">
+    <a class="mnav-tel" href="tel:+375333294415">+375 33 329-44-15</a>
+    <p><a href="viber://chat?number=%2B375333294415">Viber</a>, <a href="https://t.me/+375333294415">Telegram</a>, <a href="https://instagram.com/andrew_krasservis">Instagram</a></p>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <main>
   <section class="hero" id="hero" style="--x:56%" aria-label="Дом из бруса по вашему проекту">
@@ -68,111 +98,84 @@
 
   <section class="objects" id="objects">
     <div class="wrap">
-      <h2>Что уже построено</h2>
-      <p class="lead">Дома, бани и&nbsp;коттеджи из&nbsp;профилированного бруса. Каждый проект индивидуальный, поэтому двух одинаковых здесь нет.</p>
-      <div class="obj-grid" id="objGrid"></div>
-    </div>
-  </section>
-
-  <section class="inside" id="inside">
-    <div class="wrap">
-      <h2>«Мираж» изнутри</h2>
-      <p class="lead">Дом на&nbsp;Браславских озёрах. Внутренние работы завершены: стены из&nbsp;бруса, высокая гостиная, из&nbsp;окон видно озеро.</p>
-    </div>
-    <figure class="ins-full">
-      <img loading="lazy" src="img/ins-1.webp" alt="Гостиная со вторым светом, люстрой и окнами на озеро" width="1800" height="1800" style="object-position:50% 74%">
-      <figcaption>Гостиная со&nbsp;вторым светом</figcaption>
-    </figure>
-    <div class="wrap ins-grid">
-      <figure class="i7"><div class="ph rv"><img loading="lazy" src="img/miraj-8.webp" alt="Кухня, стол и лестница на второй этаж" width="1200" height="1200" style="object-position:50% 40%"></div>
-        <figcaption>Кухня и&nbsp;лестница на&nbsp;второй этаж</figcaption></figure>
-      <figure class="i5 i-low"><div class="ph rv"><img loading="lazy" src="img/miraj-9.webp" alt="Вид на озеро через большое окно" width="1200" height="1200"></div>
-        <figcaption>Вид из&nbsp;окна</figcaption></figure>
-      <div class="ins-sub">
-        <h3>Дом из&nbsp;бруса 200&nbsp;мм</h3>
-        <p>Под&nbsp;ключ: просторная гостиная, три спальни, вся сметная документация.</p>
+      <div class="obj-head">
+        <h2>Что уже построено</h2>
+        <p class="lead">Дома, бани и&nbsp;коттеджи из&nbsp;профилированного бруса. Каждый проект индивидуальный, поэтому двух одинаковых здесь нет.</p>
       </div>
-      <figure class="i5"><div class="ph rv"><img loading="lazy" src="img/dom200-6.webp" alt="Обеденный стол у большого окна" width="1080" height="1080"></div></figure>
-      <figure class="i7"><div class="ph rv"><img loading="lazy" src="img/dom200-7.webp" alt="Столовая с кухней и панорамными окнами" width="1080" height="1080" style="object-position:50% 60%"></div></figure>
+      <div class="obj-grid" id="objGrid"></div>
     </div>
   </section>
 
   <section class="process" id="process">
     <div class="proc-stick">
-    <div class="proc-frame" aria-hidden="true"></div>
-    <div class="proc-side">
-      <h2>От идеи <br>до дома</h2>
-      <ol class="stages">
-        <li class="stage" data-img="img/st-idea.webp" data-pos="50% 70%">
+      <canvas class="proc-gl" id="procGl" aria-hidden="true"></canvas>
+      <div class="proc-fin" aria-hidden="true"><img loading="lazy" src="img/obj-spory.webp" alt="" width="1200" height="900"><span>«Малые Споры»</span></div>
+      <div class="proc-side">
+        <h2>От идеи <br>до дома</h2>
+        <ol class="stages">
+        <li class="stage">
           <figure><img loading="lazy" src="img/st-idea.webp" alt="Эскиз дома тушью" width="1060" height="900"></figure>
-          <div class="stage-text">
-            <h3>Идея</h3>
-            <p>Приносите готовый проект, эскиз от&nbsp;руки или просто рассказываете, какой дом нужен.</p>
-          </div>
+          <div class="stage-text"><h3>Идея</h3><p>Приносите готовый проект, эскиз от&nbsp;руки или просто рассказываете, какой дом нужен.</p></div>
         </li>
-        <li class="stage" data-img="img/st-plan.webp" data-pos="50% 40%">
-          <figure><img loading="lazy" src="img/st-plan.webp" alt="План дома с комнатами, террасой и навесом для двух машин" width="1200" height="1200"></figure>
-          <div class="stage-text">
-            <h3>Проект</h3>
-            <p>Если проекта нет, разрабатываем его вместе с&nbsp;архитектором: планировка под вашу семью и&nbsp;участок.</p>
-            <small>Планировка проекта «Хорватия»</small>
-          </div>
+        <li class="stage">
+          <figure><img loading="lazy" src="img/st-plan.webp" alt="План дома с комнатами и террасой" width="1200" height="1200"></figure>
+          <div class="stage-text"><h3>Проект</h3><p>Если проекта нет, разрабатываем его вместе с&nbsp;архитектором: планировка под вашу семью и&nbsp;участок.</p></div>
         </li>
-        <li class="stage" data-img="img/st-render.webp" data-pos="50% 62%">
-          <figure><img loading="lazy" src="img/st-render.webp" alt="Визуализация дома с навесом для машин и садом" width="1200" height="1200"></figure>
-          <div class="stage-text">
-            <h3>Вид дома</h3>
-            <p>Дом можно увидеть на&nbsp;участке ещё до&nbsp;начала работ: фасады, материалы, терраса.</p>
-            <small>Визуализация проекта «Хорватия»</small>
-          </div>
-        </li>
-        <li class="stage" data-img="img/st-kompl.webp" data-pos="50% 50%">
+        <li class="stage">
           <figure><img loading="lazy" src="img/st-kompl.webp" alt="Штабеля профилированного бруса на площадке" width="1080" height="1080"></figure>
-          <div class="stage-text">
-            <h3>Домокомплект</h3>
-            <p>Изготавливаем брус и&nbsp;детали дома на&nbsp;своём производстве, под этот проект.</p>
-          </div>
+          <div class="stage-text"><h3>Домокомплект</h3><p>Изготавливаем брус и&nbsp;детали дома на&nbsp;своём производстве, под этот проект.</p></div>
         </li>
-        <li class="stage" data-img="img/st-truck.webp" data-pos="50% 42%">
+        <li class="stage">
           <figure><img loading="lazy" src="img/st-truck.webp" alt="Грузовик с манипулятором везёт брус" width="1080" height="1080"></figure>
-          <div class="stage-text">
-            <h3>Доставка</h3>
-            <p>Привозим домокомплект на&nbsp;участок и&nbsp;разгружаем манипулятором.</p>
-          </div>
+          <div class="stage-text"><h3>Доставка</h3><p>Привозим домокомплект на&nbsp;участок и&nbsp;разгружаем манипулятором.</p></div>
         </li>
-        <li class="stage" data-img="img/st-walls.webp" data-pos="50% 50%">
+        <li class="stage">
           <figure><img loading="lazy" src="img/st-walls.webp" alt="Стены дома из бруса в процессе сборки" width="1440" height="810"></figure>
-          <div class="stage-text">
-            <h3>Монтаж</h3>
-            <p>Собираем стены венец за&nbsp;венцом, ставим кровлю.</p>
-          </div>
+          <div class="stage-text"><h3>Монтаж</h3><p>Собираем стены венец за&nbsp;венцом, ставим стропила и&nbsp;кровлю.</p></div>
         </li>
-        <li class="stage" data-img="img/st-home.webp" data-pos="50% 30%">
-          <figure><img loading="lazy" src="img/st-home.webp" alt="Гостиная дома с панорамными окнами на озеро" width="1110" height="1110"></figure>
-          <div class="stage-text">
-            <h3>Дом</h3>
-            <p>Доводим дом до&nbsp;готовности под&nbsp;ключ.</p>
-            <small>«Мираж». Наружные и&nbsp;внутренние работы завершены.</small>
-            <a class="btn btn-main stage-cta" href="#request">Приложить проект</a>
-          </div>
+        <li class="stage">
+          <figure><img loading="lazy" src="img/obj-spory.webp" alt="Готовый дом из бруса" width="1200" height="900"></figure>
+          <div class="stage-text"><h3>Дом</h3><p>Доводим дом до&nbsp;готовности под&nbsp;ключ.</p><a class="btn btn-main stage-cta" href="#request">Приложить проект</a></div>
         </li>
-      </ol>
-      <ol class="stage-nav" aria-hidden="true"></ol>
-      <p class="proc-note">Кадры из разных проектов</p>
-    </div>
+        </ol>
+        <ol class="stage-nav" aria-hidden="true"></ol>
+        <p class="proc-note">Схема сборки, это не конкретный проект</p>
+      </div>
     </div>
   </section>
 
   <section class="hands" id="hands">
-    <div class="wrap">
-      <h2>Всё в&nbsp;одних руках</h2>
-      <p class="lead">Не нужно отдельно искать архитектора, производство и&nbsp;бригаду. От первого эскиза до&nbsp;готового дома вы говорите с&nbsp;одной компанией.</p>
-      <ul class="hand-list">
-        <li class="hand"><h3>Проектирование</h3><p>Вместе с&nbsp;архитектором, под&nbsp;вашу семью и&nbsp;участок.</p><img loading="lazy" src="img/st-plan.webp" alt="План дома" width="1200" height="1200" style="object-position:50% 40%"></li>
-        <li class="hand"><h3>Дизайн</h3><p>Фасады, материалы и&nbsp;вид дома на&nbsp;участке ещё до&nbsp;начала работ.</p><img loading="lazy" src="img/st-render.webp" alt="Визуализация дома" width="1200" height="1200" style="object-position:50% 62%"></li>
-        <li class="hand"><h3>Производство</h3><p>Своё производство домокомплектов из&nbsp;профилированного бруса.</p><img loading="lazy" src="img/d-ugol.webp" alt="Угол из профилированного бруса" width="1080" height="1080" style="object-position:50% 70%"></li>
-        <li class="hand"><h3>Монтаж</h3><p>Собираем дом на&nbsp;участке и&nbsp;доводим его под&nbsp;ключ.</p><img loading="lazy" src="img/hand-montazh.webp" alt="Монтажник работает на доме из бруса" width="720" height="960" style="object-position:50% 25%"></li>
-      </ul>
+    <div class="hands-stick">
+      <div class="wrap hd-top">
+        <div class="hd-titles"><h2 class="t-was">Обычно это четыре подрядчика</h2><h2 class="t-now">У&nbsp;нас всё в&nbsp;одних руках</h2></div>
+        <p class="hd-lead">Вы между ними передаёте файлы, размеры и&nbsp;сроки. У&nbsp;нас от&nbsp;первого эскиза до&nbsp;готового дома вы говорите с&nbsp;одной компанией.</p>
+      </div>
+      <div class="wrap hd-stage">
+        <svg class="hd-lines" id="hdLines" aria-hidden="true"></svg>
+        <ul class="hd-cols">
+        <li class="hd">
+          <div class="hd-ph"><img loading="lazy" src="img/st-plan.webp" alt="План дома" style="object-position:50% 40%"></div>
+          <h3>Архитектор</h3>
+          <div class="hd-txt"><p class="was"><b>Обычно.</b> Ищете сами, сравниваете, а&nbsp;потом подгоняете готовый проект под&nbsp;того, кто будет строить.</p><p class="now"><b>У нас.</b> Проект делаем с&nbsp;архитектором сразу под производство, вашу семью и&nbsp;участок. Если проект уже есть, работаем по&nbsp;нему.</p></div>
+        </li>
+        <li class="hd">
+          <div class="hd-ph"><img loading="lazy" src="img/st-render.webp" alt="Вид дома" style="object-position:50% 62%"></div>
+          <h3>Дизайнер</h3>
+          <div class="hd-txt"><p class="was"><b>Обычно.</b> Отдельный человек со&nbsp;своим видением. Стройка о&nbsp;его решениях узнаёт последней.</p><p class="now"><b>У нас.</b> Фасады, материалы и&nbsp;вид дома на&nbsp;участке вы видите ещё до&nbsp;начала работ, а&nbsp;не&nbsp;на&nbsp;стройке.</p></div>
+        </li>
+        <li class="hd">
+          <div class="hd-ph"><img loading="lazy" src="img/d-ugol.webp" alt="Угол из профилированного бруса" style="object-position:50% 70%"></div>
+          <h3>Производство</h3>
+          <div class="hd-txt"><p class="was"><b>Обычно.</b> Сравниваете цены на&nbsp;брус, сами уточняете размеры и&nbsp;ждёте, пока всё сойдётся с&nbsp;проектом.</p><p class="now"><b>У нас.</b> Своё производство домокомплектов: брус и&nbsp;детали делаем под&nbsp;этот проект и&nbsp;сами привозим на&nbsp;участок.</p></div>
+        </li>
+        <li class="hd">
+          <div class="hd-ph"><img loading="lazy" src="img/hand-montazh.webp" alt="Монтажник работает на доме" style="object-position:50% 25%"></div>
+          <h3>Бригада</h3>
+          <div class="hd-txt"><p class="was"><b>Обычно.</b> Собирает чужой комплект и&nbsp;отвечает только за&nbsp;свою часть. Вопросы по&nbsp;размерам снова к&nbsp;вам.</p><p class="now"><b>У нас.</b> Собираем дом на&nbsp;участке: стены, стропила, кровля. Можем довести его до&nbsp;готовности под&nbsp;ключ.</p></div>
+        </li>
+        </ul>
+        <div class="hd-foot"><div class="hd-f"><span class="f-was">Четыре разных разговора об&nbsp;одном доме</span><span class="f-now">Один телефон на&nbsp;весь дом</span></div><a class="hd-tel" href="tel:+375333294415">+375 33 329-44-15</a><a class="btn btn-main hd-btn" href="#request">Приложить проект</a></div>
+      </div>
     </div>
   </section>
 
@@ -337,6 +340,22 @@
   </div>
 </div>
 
+<dialog class="pj" id="pj" aria-label="Проект" tabindex="-1">
+  <button class="pj-x" type="button" aria-label="Закрыть"><svg class="i"><use href="#i-x"/></svg></button>
+  <div class="pj-in">
+    <div class="pj-side">
+      <div class="pj-sticky">
+        <h2 id="pjT"></h2>
+        <p class="pj-lead" id="pjL"></p>
+        <dl class="pj-rows" id="pjR"></dl>
+        <p class="pj-ask">Хотите похожий дом?</p>
+        <a class="btn btn-main" href="#request" data-mode="sketch">Приложить эскиз <svg class="i"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </div>
+    <div class="pj-photos" id="pjP"></div>
+  </div>
+</dialog>
+
 <dialog class="gal" id="gal" aria-label="Фотографии объекта" tabindex="-1">
   <button class="gal-x" type="button" aria-label="Закрыть"><svg class="i"><use href="#i-x"/></svg></button>
   <div class="gal-stage">
@@ -347,12 +366,12 @@
   <div class="gal-foot">
     <div class="gal-t"><h3 id="galTitle"></h3><p id="galMeta"></p></div>
     <div class="gal-thumbs" id="galThumbs"></div>
-    <div class="gal-cta"><span class="gal-n" id="galNum"></span><p>Хотите похожий дом? Приложите эскиз</p><a class="btn btn-main btn-s" href="#request" data-mode="sketch">Приложить проект</a></div>
+    <div class="gal-cta"><span class="gal-n" id="galNum"></span></div>
   </div>
 </dialog>
 
 <script src="vendor/gsap.min.js" defer></script>
 <script src="vendor/ScrollTrigger.min.js" defer></script>
-<script src="main.js" defer></script>
+<script src="main.js?v=6" defer></script>
 </body>
 </html>
